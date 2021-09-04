@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'chat',
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,6 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'chatapp.urls'
+ASGI_APPLICATION = "chatapp.routing.application"
 
 TEMPLATES = [
     {
@@ -118,3 +121,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND":"channels.layers.InMemoryChannelLayer"
+    }
+}
