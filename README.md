@@ -2,7 +2,7 @@
 
 <h4>Basic chat application using django and websocket</h4>
 <h4>Implemented Django Channels to handle websocket protocols</h4>
-<h4> Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It's built on a Python specification called ASGI. </h4>
+<h4> Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It's built on a Python specification called ASGI.</h4>
 
 
 
